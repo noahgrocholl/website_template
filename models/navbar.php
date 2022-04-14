@@ -13,7 +13,7 @@
                     <a class="nav-link" href="#">Speisekarte</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled">Weiter Links</a>
+                    <a class="nav-link disabled">Weitere Links</a>
                 </li>
             </ul>
         </div>
