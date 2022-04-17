@@ -1,3 +1,4 @@
+<!-- Überschrift für PC&Tablet und danach mobile -->
 <div class="d-none d-md-block">
     <h1 class="text-center" style="font-family: Lobster;">Willkommen bei</h1>
     <div class="d-flex justify-content-center">
@@ -18,25 +19,49 @@
         <img class="d-none d-lg-block" src="images/pizza_lg.jpeg" alt="" style="width: 90%;">
     </div>
 
-    <div class="row">
-        <div class="col-lg-6 col-md-6">
-            <div class="d-flex justify-content-center">
-                <h3>Wir bieten:</h3>
+    <div class="d-none d-md-block">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="d-flex justify-content-center">
+                    <h3>Wir bieten:</h3>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <ul>
+                        <li>Sehr hochwertige moderne Küche</li>
+                        <li>nur die besten Zutaten</li>
+                        <li>schnell zubereitete Mahlzeiten</li>
+                    </ul>
+                </div>
             </div>
-            <div class="d-flex justify-content-center">
+
+            <div class="col-lg-6 col-md-6">
+                <div class="d-flex justify-content-center">
+                    <h3>Haben aber dennoch:</h3>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <ul>
+                        <li>ein freundliches Personal</li>
+                        <li>frische Zuaten aus der Region</li>
+                        <li>die Einhaltung aller Hygenestandarts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="d-md-none">
+            <div class="mb-3">
+                <h3>Wir bieten:</h3>
                 <ul>
                     <li>Sehr hochwertige moderne Küche</li>
                     <li>nur die besten Zutaten</li>
                     <li>schnell zubereitete Mahlzeiten</li>
                 </ul>
             </div>
-        </div>
 
-        <div class="col-lg-6 col-md-6">
-            <div class="d-flex justify-content-center">
+            <div class="mb-3">
                 <h3>Haben aber dennoch:</h3>
-            </div>
-            <div class="d-flex justify-content-center">
                 <ul>
                     <li>ein freundliches Personal</li>
                     <li>frische Zuaten aus der Region</li>
@@ -44,14 +69,17 @@
                 </ul>
             </div>
         </div>
-
     </div>
+
+</div>
+
+</div>
 </div>
 
 <!-- Bootstrap Caorusel nicht large -->
 <div class="d-md-block d-lg-block d-xl-none mb-3 mx-auto" style="width: 90%;">
 
-    <h2 style="font-family: Beau Rivage;">Unsere Spezialitäten</h3>
+    <h2 style="font-family: Beau Rivage;">Unsere Spezialitäten</h2>
 
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -96,7 +124,7 @@
 <!-- Bootstrap Caorusel large -->
 <div class="d-xl-block d-lg-none d-md-none d-none mb-3 mx-auto" style="width: 64rem; height: 36rem">
 
-    <h2 style="font-family: Beau Rivage;">Unsere Spezialitäten</h3>
+    <h2 style="font-family: Beau Rivage;">Unsere Spezialitäten</h2>
 
         <div id="carouselExampleCaptions_lg" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
