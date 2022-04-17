@@ -1,3 +1,16 @@
+<div class="d-none d-md-block">
+    <h1 class="text-center" style="font-family: Lobster;">Willkommen bei</h1>
+    <div class="d-flex justify-content-center">
+        <img src="images/logo_full.png" alt="LOGO FULL PNG" style="width: 20rem; height: 5rem;">
+    </div>
+</div>
+<div class="d-md-none">
+    <div class="d-flex justify-content-center">
+        <img src="images/logo_full.png" alt="LOGO FULL PNG" style="width: 20rem; height: 7rem;">
+    </div>
+</div>
+
+<!-- Bild mit Tabellentext -->
 <div class="mb-5">
     <div class="row my-2 d-flex justify-content-center">
         <img class="d-md-none" src="images/pizza.jpeg" alt="" style="width: 90%;">
@@ -49,21 +62,21 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="images/erdbeer.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h5>Erdbeeren mit Scheiße</h5>
                         <p>Sie werden selbst gepflückt und von mir verfeinert.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/bohnen.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h5>Blaue Bohnen</h5>
                         <p>Fragen sie nicht warum die blau sind.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/fisch.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h5>Blobfisch</h5>
                         <p>blobfisch blobfisch blobfisch blobfisch blobfisch blobfisch </p>
                     </div>
@@ -114,11 +127,11 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions_lg" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions_lg" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
