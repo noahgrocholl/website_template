@@ -151,7 +151,7 @@
                     <img src="images/fisch.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Blobfisch</h5>
-                        <p>blobfisch blobfisch blobfisch blobfisch blobfisch blobfisch </p>
+                        <p>blobfisch blobfisch blobfisch blobfisch blobfisch blobfisch</p>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@
 </body>
 <style>
     body {
-        background-color: #dbf2db;
+        background-color: #cddbcd;
     }
 </style>
 
