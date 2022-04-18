@@ -1,0 +1,44 @@
+23 	Pizza Magherita		4.40	7.20	Tomaten & Käse
+24	Pizza Sicilia		4.70	7.40	Zwiebeln
+25	Pizza Salami		4.90	7.70	Salami
+26	Pizza Funghi		4.90	7.70	Champignons
+27	Pizza Prosciutto	4.90	8.20	Schinken & Pilze
+28	Pizza Davide		5.40	8.20	Schinken, Pilze & Ei
+29	Pizza Melissano		5.40	8.20	Peperoni, Pilze & Artischocken
+30	Pizza Capricciosa	5.40	8.40	Schinken, Oliven & Artischocken
+31	Pizza Trattoria		5.40	8.70	Schinken, Oliven, Peperoni, Artischocken & Zwiebel
+32	Pizza 4 Stagioni	5.40	8.70	Schinken, Salami, Pilze, Peperoni, Oliven & Artischocken
+33	Pizza Calzone		5.40	8.70	Schinken, Zwiebeln & Pilze
+34	Pizza Sardelle		5.90	9.20	Oliven, Kapern, Artischocken & Sardellen
+35	Pizza Frutti di Mare	5.90	9.90	Meeresfrüchte
+36	Pizza Milano		4.90	8.20	Salami & Pilze
+37	Pizza Firenze		4.90	8.20	Schinken, Salami & Peperoni
+38	Pizza Riviera		4.90	8.20	Salami & Peperoni
+39	Pizza Cattolica		4.90	8.20	Schinken
+40	Pizza Roma		5.40	8.20	Schinken, Salami & Pilze
+41	Pizza Lecce		5.90	8.40	Schinken, Sardelle & Oliven
+42	Pizza Pappa		5.40	8.40	KEIN Käse, Schinken, Salami, Paprika, Peperoni & Zwiebeln
+43	Pizza Vegetarisch	5.40	8.40	Brokkoli, Aubergine & Zucchini
+44	Pizza Hawaii		5.40	9.20	Schinken & Ananas
+45	Pizza Cocco		5.40	9.20	Tomaten, Mozzerella & Basilikum
+46	Pizza Spinat		5.40	9.20	Spinat & Brokkoli
+47	Pizza Tonno		5.90	9.20	Thunfisch, Kapern, Oliven & Artischocken
+48	Pizza Mamma		5.90	9.20	Schinken, Peperoni, Zwiebel & Oliven
+49	Pizza Kothail		5.90	9.20	Garnelen
+
+51	Spaghetti Napoli	----	7.40	Tomatensauce
+52	Spaghetti alla Ciociara	----	7.90	Tomatensauce, Erbsen & Schinken
+53	Spaghetti Bolognese	----	7.90	Fleischsauce
+54	Spaghetti, Aghoi, Peperoni	7.90	Knoblauch, Öl & Peperocini
+55	Spaghetti alla Mastriciana	7.90	Tomatensauce & Speck
+56	Tortellini Bolognese	----	7.90	Fleischsauce
+57	Tortellini alla Panna	----	8.40	Schinken & Sahnesauce
+58	Rigattoni alla Panna	----	8.40	Schinken, Sahnesauce & Käse (überbacken)
+59	Gnocchi			----	8.90	Fleischsauce
+60	Gnocchi 		----	8.40	Tomatensauce
+61	Gnocchi			----	9.40	Gorgonzolasauce
+
+62	Pommes Frites		2.70	4.00	mit Ketchup oder Mayonese		
+63	Currywurst		----	6.50	mit Pommes Frites
+65	Gambas			----	15.00	mit Käse überbacken
+
