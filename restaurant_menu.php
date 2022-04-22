@@ -88,43 +88,42 @@ function show_items($number, $divider, $width, $height)
         array_push($count_items_salad, $card);
         $count_cards = count($items_salad);
 
-        if ($number == 3) {
-            $m = $count_cards % $number;
-            if (($key + 1) % $number == 0) { ?>
-                <div class="d-flex justify-content-center">
-                    <div class="row mb-2">
-                        <?php
-                        foreach ($count_items_salad as $item) { ?>
-                            <div class="col-<?= $divider ?>">
 
-                                <?php
-                                echo $item[0];
-                                ?>
+        $m = $count_cards % $number;
+        if (($key + 1) % $number == 0) { ?>
+            <div class="d-flex justify-content-center">
+                <div class="row mb-2">
+                    <?php
+                    foreach ($count_items_salad as $item) { ?>
+                        <div class="col-<?= $divider ?>">
 
-                            </div>
-                        <?php } ?>
-                    </div>
+                            <?php
+                            echo $item[0];
+                            ?>
+
+                        </div>
+                    <?php } ?>
                 </div>
-            <?php
-                $count_items_salad = [];
-            } elseif (($key + 1) > ($count_cards - $m)) { ?>
-                <div class="d-flex justify-content-center">
-                    <div class="row mb-2">
-                        <?php
-                        foreach ($count_items_salad  as $item) { ?>
-                            <div class="col-<?= $divider ?>">
+            </div>
+        <?php
+            $count_items_salad = [];
+        } elseif (($key + 1) > ($count_cards - $m)) { ?>
+            <div class="d-flex justify-content-center">
+                <div class="row mb-2">
+                    <?php
+                    foreach ($count_items_salad  as $item) { ?>
+                        <div class="col-<?= $divider ?>">
 
-                                <?php
-                                echo $item[0];
-                                ?>
+                            <?php
+                            echo $item[0];
+                            ?>
 
-                            </div>
-                        <?php } ?>
-                    </div>
+                        </div>
+                    <?php } ?>
                 </div>
+            </div>
 <?php
 
-            }
         }
     }
 }
