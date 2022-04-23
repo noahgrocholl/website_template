@@ -29,11 +29,11 @@ function create_cards($width, $height, $category)
     return $items_cards;
 }
 
-function create_rows($number, $key, $card, $divider, $count_cards)
+function create_rows($number, $key, $card, $divider, $count_cards_salad)
 {
     $count_items = array();
     if ($number == 3) {
-        $m = $count_cards % $number;
+        $m = $count_cards_salad % $number;
         array_push($count_items, $card);
         if (($key + 1) % $number == 0) {
             foreach ($count_items  as $item) { ?>
@@ -47,7 +47,7 @@ function create_rows($number, $key, $card, $divider, $count_cards)
             <?php } ?>
             <?php
             $count_items = [];
-        } elseif (($key + 1) > ($count_cards - $m)) {
+        } elseif (($key + 1) > ($count_cards_salad - $m)) {
             foreach ($count_items  as $item) { ?>
                 <div class="col-<?= $divider ?>">
 
@@ -71,63 +71,138 @@ function show_items($number, $divider, $width, $height)
     $items_pasta = create_cards($width, $height, 3);
     $items_grill = create_cards($width, $height, 4);
 
-
-    # Überschriften für Salat für unterschiedliche Größen
+    # Überschrift Gesamt Vieleicht noch "Logo" als Bild
     if ($number == 1) { ?>
-        <h1 style="font-family: Beau Rivage;" class="text-center">Salat und Frisches</h1>
+        <h1 style="font-family: Beau Rivage; font-size: 3rem" class="text-center">Unsere Karte</h1>
+    <?php
+    } elseif ($number == 3) { ?>
+        <h1 style="font-family: Beau Rivage; font-size: 3rem" class="text-center">Unsere Karte</h1>
+    <?php
+    } elseif ($number == 4) { ?>
+        <h1 style="font-family: Beau Rivage;" class="text-center">Unsere Karte</h1>
     <?php
     }
-    if ($number == 3) { ?>
-        <h1 style="font-family: Beau Rivage;" class="text-center">Salat und Frisches</h1>
+
+    ?>
+    <div id="menu_salad" class="mb-4">
         <?php
-    }
-    if ($number == 4) { ?>
-        <h1 style="font-family: Beau Rivage; font-size: 4rem" class="text-center">Salat und Frisches</h1>
+        # Überschriften für Salat für unterschiedliche Größen
+        if ($number == 1) { ?>
+            <h2 style="font-family: Beau Rivage;" class="text-center">Salat und Frisches</h2>
         <?php
-    }
-    $count_items_salad = array();
-    foreach ($items_salad as $key => $card) {
-        array_push($count_items_salad, $card);
-        $count_cards = count($items_salad);
-
-
-        $m = $count_cards % $number;
-        if (($key + 1) % $number == 0) { ?>
-            <div class="d-flex justify-content-center">
-                <div class="row mb-2">
-                    <?php
-                    foreach ($count_items_salad as $item) { ?>
-                        <div class="col-<?= $divider ?>">
-
-                            <?php
-                            echo $item[0];
-                            ?>
-
-                        </div>
-                    <?php } ?>
-                </div>
-            </div>
+        } elseif ($number == 3) { ?>
+            <h2 style="font-family: Beau Rivage;" class="text-center">Salat und Frisches</h2>
         <?php
-            $count_items_salad = [];
-        } elseif (($key + 1) > ($count_cards - $m)) { ?>
-            <div class="d-flex justify-content-center">
-                <div class="row mb-2">
-                    <?php
-                    foreach ($count_items_salad  as $item) { ?>
-                        <div class="col-<?= $divider ?>">
-
-                            <?php
-                            echo $item[0];
-                            ?>
-
-                        </div>
-                    <?php } ?>
-                </div>
-            </div>
-<?php
-
+        } elseif ($number == 4) { ?>
+            <h2 style="font-family: Beau Rivage;" class="text-center">Salat und Frisches</h2>
+            <?php
         }
-    }
+
+        $count_items_salad = array();
+        foreach ($items_salad as $key => $card) {
+            array_push($count_items_salad, $card);
+            $count_cards_salad = count($items_salad);
+
+
+            $m_salad = $count_cards_salad % $number;
+            if (($key + 1) % $number == 0) { ?>
+                <div class="d-flex justify-content-center">
+                    <div class="row mb-2">
+                        <?php
+                        foreach ($count_items_salad as $item) { ?>
+                            <div class="col-<?= $divider ?>">
+
+                                <?php
+                                echo $item[0];
+                                ?>
+
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+            <?php
+                $count_items_salad = [];
+            } elseif (($key + 1) == $count_cards_salad) { ?>
+                <div class="d-flex justify-content-center">
+                    <div class="row mb-2">
+                        <?php
+                        foreach ($count_items_salad  as $item) { ?>
+                            <div class="col-<?= $divider ?>">
+
+                                <?php
+                                echo $item[0];
+                                ?>
+
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+        <?php
+
+            }
+        }
+        ?>
+    </div>
+
+    <div id="menu_pizza" class="mb-2">
+        <?php
+        # Überschriften für Pizza für unterschiedliche Größen
+        if ($number == 1) { ?>
+            <h2 style="font-family: Beau Rivage;" class="text-center">Pizza</h2>
+        <?php
+        } elseif ($number == 3) { ?>
+            <h2 style="font-family: Beau Rivage;" class="text-center">Pizza</h2>
+        <?php
+        } elseif ($number == 4) { ?>
+            <h2 style="font-family: Beau Rivage;" class="text-center">Pizza</h2>
+            <?php
+        }
+
+        $count_items_pizza = array();
+        foreach ($items_pizza as $key => $card) {
+            array_push($count_items_pizza, $card);
+            $count_cards_pizza = count($items_pizza);
+
+            $m_pizza = $count_cards_pizza % $number;
+            if (($key + 1) % $number == 0) { ?>
+                <div class="d-flex justify-content-center">
+                    <div class="row mb-2">
+                        <?php
+                        foreach ($count_items_pizza as $item) { ?>
+                            <div class="col-<?= $divider ?>">
+
+                                <?php
+                                echo $item[0];
+                                ?>
+
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+            <?php
+                $count_items_pizza = [];
+            } elseif (($key + 1) == $count_cards_pizza) { ?>
+                <div class="d-flex justify-content-center">
+                    <div class="row mb-2">
+                        <?php
+                        foreach ($count_items_pizza  as $item) { ?>
+                            <div class="col-<?= $divider ?>">
+
+                                <?php
+                                echo $item[0];
+                                ?>
+
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+        <?php
+
+            }
+        }
+        ?>
+    </div>
+<?php
 }
 
 ?>
