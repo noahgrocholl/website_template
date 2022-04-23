@@ -104,7 +104,6 @@ function show_items($number, $divider, $width, $height)
             $count_cards_salad = count($items_salad);
 
 
-            $m_salad = $count_cards_salad % $number;
             if (($key + 1) % $number == 0) { ?>
                 <div class="d-flex justify-content-center">
                     <div class="row mb-2">
@@ -127,7 +126,7 @@ function show_items($number, $divider, $width, $height)
                     <div class="row mb-2">
                         <?php
                         foreach ($count_items_salad  as $item) { ?>
-                            <div class="col-<?= $divider ?>">
+                            <div class="col-<?= 12 / count($count_items_salad) ?>">
 
                                 <?php
                                 echo $item[0];
@@ -163,7 +162,6 @@ function show_items($number, $divider, $width, $height)
             array_push($count_items_pizza, $card);
             $count_cards_pizza = count($items_pizza);
 
-            $m_pizza = $count_cards_pizza % $number;
             if (($key + 1) % $number == 0) { ?>
                 <div class="d-flex justify-content-center">
                     <div class="row mb-2">
@@ -187,6 +185,121 @@ function show_items($number, $divider, $width, $height)
                         <?php
                         foreach ($count_items_pizza  as $item) { ?>
                             <div class="col-<?= 12 / count($count_items_pizza) ?>">
+
+                                <?php
+                                echo $item[0];
+                                ?>
+
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+        <?php
+
+            }
+        }
+        ?>
+    </div>
+
+    <div id="menu_pasta" class="mb-2">
+        <?php
+        # Überschriften für Pizza für unterschiedliche Größen
+        if ($number == 1) { ?>
+            <h2 style="font-family: Beau Rivage;" class="text-center">Pasta</h2>
+        <?php
+        } elseif ($number == 3) { ?>
+            <h2 style="font-family: Beau Rivage;" class="text-center">Pasta</h2>
+        <?php
+        } elseif ($number == 4) { ?>
+            <h2 style="font-family: Beau Rivage;" class="text-center">Pasta</h2>
+            <?php
+        }
+
+        $count_items_pasta = array();
+        foreach ($items_pasta as $key => $card) {
+            array_push($count_items_pasta, $card);
+            $count_cards_pasta = count($items_pasta);
+
+            if (($key + 1) % $number == 0) { ?>
+                <div class="d-flex justify-content-center">
+                    <div class="row mb-2">
+                        <?php
+                        foreach ($count_items_pasta as $item) { ?>
+                            <div class="col-<?= $divider ?>">
+
+                                <?php
+                                echo $item[0];
+                                ?>
+
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+            <?php
+                $count_items_pasta = [];
+            } elseif (($key + 1) == $count_cards_pasta) { ?>
+                <div class="d-flex justify-content-center">
+                    <div class="row mb-2">
+                        <?php
+                        foreach ($count_items_pasta as $item) { ?>
+                            <div class="col-<?= 12 / count($count_items_pasta) ?>">
+
+                                <?php
+                                echo $item[0];
+                                ?>
+
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+        <?php
+
+            }
+        }
+        ?>
+    </div>
+    <div id="menu_grill" class="mb-2">
+        <?php
+        # Überschriften für Pizza für unterschiedliche Größen
+        if ($number == 1) { ?>
+            <h2 style="font-family: Beau Rivage;" class="text-center">Gegrilltes</h2>
+        <?php
+        } elseif ($number == 3) { ?>
+            <h2 style="font-family: Beau Rivage;" class="text-center">Gegrilltes</h2>
+        <?php
+        } elseif ($number == 4) { ?>
+            <h2 style="font-family: Beau Rivage;" class="text-center">Gegrilltes</h2>
+            <?php
+        }
+
+        $count_items_grill = array();
+        foreach ($items_grill as $key => $card) {
+            array_push($count_items_grill, $card);
+            $count_cards_grill = count($items_grill);
+
+            if (($key + 1) % $number == 0) { ?>
+                <div class="d-flex justify-content-center">
+                    <div class="row mb-2">
+                        <?php
+                        foreach ($count_items_grill as $item) { ?>
+                            <div class="col-<?= $divider ?>">
+
+                                <?php
+                                echo $item[0];
+                                ?>
+
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
+            <?php
+                $count_items_grill = [];
+            } elseif (($key + 1) == $count_cards_grill) { ?>
+                <div class="d-flex justify-content-center">
+                    <div +class="row mb-2">
+                        <?php
+                        foreach ($count_items_grill as $item) { ?>
+                            <div class="col-<?= 12 / count($count_items_grill) ?>">
 
                                 <?php
                                 echo $item[0];
