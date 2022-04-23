@@ -81,9 +81,11 @@ function show_items($number, $divider, $width, $height)
         <h1 style="font-family: Beau Rivage;" class="text-center">Salat und Frisches</h1>
         <?php
     }
-
+    if ($number == 4) { ?>
+        <h1 style="font-family: Beau Rivage; font-size: 4rem" class="text-center">Salat und Frisches</h1>
+        <?php
+    }
     $count_items_salad = array();
-
     foreach ($items_salad as $key => $card) {
         array_push($count_items_salad, $card);
         $count_cards = count($items_salad);
