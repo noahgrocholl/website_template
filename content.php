@@ -91,7 +91,7 @@
                 <div class="carousel-item active">
                     <img src="images/erdbeer.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption">
-                        <h5>Erdbeeren mit Scheiße</h5>
+                        <h5>Erdbeeren</h5>
                         <p>Sie werden selbst gepflückt und von mir verfeinert.</p>
                     </div>
                 </div>

@@ -19,6 +19,9 @@ function create_cards($width, $height, $category)
                         <div class="card-body">
                             <h5 class="card-title">' . $item[2] . '</h5>
                             <h6 class="card-subtitle mb-2 text-muted">' . $item[3] . '</h6>
+                            <div class="card-footer">
+                                <div class="text-left">'. $item[4] .'0€</div>
+                            </div>
                         </div>
                     </div>',
                     $category, $item[1]
@@ -329,7 +332,7 @@ function show_items($number, $divider, $width, $height)
 </div>
 
 <div class="d-none d-lg-none d-xl-block">
-    <?= show_items(4, 3, 16, 11) ?>
+    <?= show_items(4, 3, 16, 13) ?>
 </div>
 
 <?php
