@@ -19,9 +19,9 @@ function create_cards($width, $height, $category)
                         <div class="card-body">
                             <h5 class="card-title">' . $item[2] . '</h5>
                             <h6 class="card-subtitle mb-2 text-muted">' . $item[3] . '</h6>
-                            <div class="card-footer">
-                                <div class="text-left">'. $item[4] .'0€</div>
-                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="text-left">'. $item[4] .'0€</div>
                         </div>
                     </div>',
                     $category, $item[1]
@@ -32,39 +32,6 @@ function create_cards($width, $height, $category)
     return $items_cards;
 }
 
-function create_rows($number, $key, $card, $divider, $count_cards_salad)
-{
-    $count_items = array();
-    if ($number == 3) {
-        $m = $count_cards_salad % $number;
-        array_push($count_items, $card);
-        if (($key + 1) % $number == 0) {
-            foreach ($count_items  as $item) { ?>
-                <div class="col-<?= $divider ?>">
-
-                    <?php
-                    echo $item[0];
-                    ?>
-
-                </div>
-            <?php } ?>
-            <?php
-            $count_items = [];
-        } elseif (($key + 1) > ($count_cards_salad - $m)) {
-            foreach ($count_items  as $item) { ?>
-                <div class="col-<?= $divider ?>">
-
-                    <?php
-                    echo $item[0];
-                    ?>
-
-                </div>
-            <?php } ?>
-
-        <?php
-        }
-    }
-}
 
 
 function show_items($number, $divider, $width, $height)
@@ -324,15 +291,15 @@ function show_items($number, $divider, $width, $height)
 ?>
 
 <div class="d-md-none">
-    <?= show_items(1, 12, 20, 10) ?>
+    <?= show_items(1, 12, 20, 13) ?>
 </div>
 
 <div class="d-none d-md-block d-xl-none">
-    <?= show_items(3, 4, 14, 13) ?>
+    <?= show_items(3, 4, 14, 15) ?>
 </div>
 
 <div class="d-none d-lg-none d-xl-block">
-    <?= show_items(4, 3, 16, 13) ?>
+    <?= show_items(4, 3, 16, 15) ?>
 </div>
 
 <?php
