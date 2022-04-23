@@ -182,12 +182,11 @@ function show_items($number, $divider, $width, $height)
             <?php
                 $count_items_pizza = [];
             } elseif (($key + 1) == $count_cards_pizza) { ?>
-
-                <div class="row mb-2">
-                    <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="row mb-2">
                         <?php
                         foreach ($count_items_pizza  as $item) { ?>
-                            <div class="col-<?= $divider ?>">
+                            <div class="col-<?= 12 / count($count_items_pizza) ?>">
 
                                 <?php
                                 echo $item[0];
@@ -197,7 +196,6 @@ function show_items($number, $divider, $width, $height)
                         <?php } ?>
                     </div>
                 </div>
-
         <?php
 
             }

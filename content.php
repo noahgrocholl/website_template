@@ -136,7 +136,7 @@
                 <div class="carousel-item active">
                     <img src="images/erdbeer.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Erdbeeren mit Scheiße</h5>
+                        <h5>Erdbeeren</h5>
                         <p>Sie werden selbst gepflückt und von mir verfeinert.</p>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                     <img src="images/bohnen.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Blaue Bohnen</h5>
-                        <p>Fragen sie nicht warum die blau sind.</p>
+                        <p>Bottom Text</p>
                     </div>
                 </div>
                 <div class="carousel-item">
