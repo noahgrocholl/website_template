@@ -4,13 +4,13 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="TEMPLATE" style="width: 40px; height: 40px"></a>
+            <a class="navbar-brand" href="/template"><img src="images/logo.png" alt="TEMPLATE" style="width: 40px; height: 40px"></a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/template">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="restaurant_menu.php">Speisekarte</a>
+                    <a class="nav-link" href="restaurant-menu">Speisekarte</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled">Weitere Links</a>

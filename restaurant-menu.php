@@ -21,7 +21,7 @@ function show_items($number, $divider, $width, $height)
     } ?>
 
 
-    <div id="menu_salad" class="mb-1">
+    <div id="menu-salad" class="mb-1">
         <?php
         # Überschriften für Salat für unterschiedliche Größen
         if ($number == 1) { ?>
